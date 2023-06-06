@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de aplicações web em JAVA</title>
+</head>
+<body>
+    <img src="./img/EPF.png" height="200" width="400"></img>
+    <body topmargin=50 leftmargin=200 rightmargin="200"></body>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+        }
+        .dark-mode {
+            background-color: black;
+            color: rgb(255, 0, 0);
+        }
+        .light-mode {
+            background-color: white;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    </head>
+        <button onclick="darkMode()">RedMode</button>
+        <button onclick="lightMode()">LightMode</button>
+        <script>
+        function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+<h1>Desenvolvimento de aplicações web em JAVA</h1>
+<body background="./img/Banner.png"></body>
+</body>
+</html>
